@@ -1,9 +1,14 @@
+import Home from "./pages/home/Home";
+import Universities from "./pages/Universities/Universities";
+import PostalLookup from "./pages/Postal lookup/PostalLookup";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>helloooo</h1>
+     <Home/>
+     <Universities/>
+     <PostalLookup/>
     </div>
   );
 }
