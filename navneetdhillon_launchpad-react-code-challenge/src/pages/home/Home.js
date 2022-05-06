@@ -1,5 +1,4 @@
 import { useState, useEffect} from 'react';
-import Axios from "axios";
 import axios from 'axios';
 const Home = () => {
 const [posts, setPosts] = useState("");
