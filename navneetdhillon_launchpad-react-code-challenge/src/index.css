@@ -21,7 +21,26 @@ code {
 .post {
   width: 200px;
   padding: 4px;
-  margin-right: 5px;
+  margin-right: 0px;
   background-color: grey;
   margin-bottom: 5px;
+  margin-left: 8px;
+  border: 2px solid black;
+  border-radius: 25px;
+
+}
+.edit
+{
+  text-align: center;
+  margin-left: 50px;
+  border-radius: 10px;
+  background-color: black;
+  color: aliceblue;
+}
+.delete
+{
+  text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    color: aliceblue;
 }
