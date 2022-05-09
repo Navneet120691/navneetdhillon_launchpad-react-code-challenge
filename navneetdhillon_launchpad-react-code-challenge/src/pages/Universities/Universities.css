@@ -1,0 +1,68 @@
+.dropdown {
+    position: relative;
+    font-family: Arial;
+    height: 60px;
+    border: 2px black solid;
+    margin-left: 33%;
+    margin-top: 2%;
+} 
+  .dropdown select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .dropdown {
+    background-color: rgb(86, 119, 153);
+    color: white;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .dropdown:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .dropdown.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .dropdowns div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  .heading
+  {
+      color:blue;
+      margin-left: 25%;
+      padding: 20px;
+    }
+  .alpha
+  {
+      text-transform: uppercase;
+  }
+  .university
+  {
+      height: 300px;
+      background-color:darkgrey;
+      margin: 20px;
+      width: 500px;
+  }
+  .universities-container
+  {
+    flex-direction: column;
+    display: flex;
+align-items: center;
+  }
+  

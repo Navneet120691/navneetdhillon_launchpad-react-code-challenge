@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-
+import './NewPost.css'
 const NewPost = () => {
 const [title, setTitle] = useState("");
 const [body, setBody] = useState("");
@@ -35,7 +35,7 @@ return (
 <form onSubmit={handleSubmit}>
 <label>
 <p>Title:</p>
-<input
+<input class="inputpost"
 type="text"
 value={title}
 onChange={(e) => setTitle(e.target.value)}
@@ -48,8 +48,8 @@ type="text"
 value={body}
 onChange={(e) => setBody(e.target.value)}
 />
-</label>
-<button>Submit Post</button>
+</label><br></br>
+<label><button className="submit">Submit Post</button></label>
 </form>
 );
 };

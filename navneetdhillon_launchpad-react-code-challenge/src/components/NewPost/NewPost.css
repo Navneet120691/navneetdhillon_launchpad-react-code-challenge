@@ -1,0 +1,12 @@
+input{
+    border: 2px solid rgb(85, 81, 81);
+}
+.submit
+{
+    margin: 20px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: brown;
+    color: white;
+
+}

@@ -14,7 +14,19 @@ setArea(data.data);
 
 return (
 <div>
-<form onSubmit={handleSubmit}>
+
+<h2 className="heading">Search US Postal Code to see Area Details</h2>
+<form onSubmit={handleSubmit} class="search-bar">
+  <input type="search" placeholder='Search by Postal Code' value={code}
+onChange={(e) => setCode(e.target.value)}
+/>
+  <button class="search-btn" type="submit">
+    <span>Search</span>
+  </button>
+</form>
+
+
+{/* <form onSubmit={handleSubmit}>
 <label>
 <input
 type="text"
@@ -23,7 +35,7 @@ onChange={(e) => setCode(e.target.value)}
 />
 </label>
 <button>Search</button>
-</form>
+</form> */}
 {area && (
 <div className="area">
 <h2 className="country">{area.country}</h2>

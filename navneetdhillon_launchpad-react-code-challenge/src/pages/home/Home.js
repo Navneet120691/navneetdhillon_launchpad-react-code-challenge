@@ -53,25 +53,23 @@ const Home = () => {
   };
   return (
   <>
-  <form onSubmit={handleSearch}>
-  <label>
-  <span>Search</span>
-  <input
-  type="text"
-  value={postId}
-  onChange={(e) => setPostId(e.target.value)}
-  />
-  </label>
-  <button>Search Post</button>
-  </form>
-  <button className="new-post" onClick={createPost}>
-  Create New Post
+  <form onSubmit={handleSearch} class="search-bar">
+  <input type="search" placeholder='Search Post By ID' value={postId}
+onChange={(e) => setPostId(e.target.value)}
+/>
+  <button class="search-btn" type="submit">
+    <span>Search</span>
   </button>
+</form>
+  <button className="new-post" onClick={createPost}><span>
+  Create New Post</span>
+  </button>
+  
   <div className="post-container">
   {posts &&
   posts.map((post) => (
   <div key={post.id} className="post">
-  <div className="title">{post.id}</div>
+  <div className="id">{post.id}</div>
   <div className="title">{post.title}</div>
   <div className="body">{post.body}</div>
   <div style={{ display: "flex", marginTop: "10px" }}>

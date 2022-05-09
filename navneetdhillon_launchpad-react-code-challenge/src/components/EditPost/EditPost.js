@@ -47,7 +47,7 @@ value={postBody}
 onChange={(e) => setPostBody(e.target.value)}
 />
 </label>
-<button>Submit</button>
+<button className="submit">Submit</button>
 </form>
 );
 };

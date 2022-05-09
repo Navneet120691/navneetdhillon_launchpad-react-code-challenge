@@ -9,13 +9,11 @@ class Navbar extends React.Component{
     {
         return(
             <nav className="NavbarItems">
-                <h1 classname="navbar-logo">React <i className="fab fa-react"></i></h1>
-                <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
-                </div>
+                <h5 classname="navbar-logo">React Project</h5>
+                
                 <ul className="navitems">
                  <li>
-                     <Link to="/">HOME</Link>
+                     <Link to="/">Home</Link>
                  </li>
                  <li>
                      <Link to="/Universities">Universities</Link>

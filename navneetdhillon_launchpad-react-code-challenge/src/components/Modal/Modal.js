@@ -6,7 +6,7 @@ return (
 <>
 <Modal show={show} onHide={close}>
 <Modal.Header closeButton>
-<Modal.Title>Post</Modal.Title>
+<Modal.Title>Add New Post</Modal.Title>
 </Modal.Header>
 <Modal.Body>{form}</Modal.Body>
 </Modal>

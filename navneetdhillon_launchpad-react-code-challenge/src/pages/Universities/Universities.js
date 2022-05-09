@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import './Universities.css'
 
 const Universities = () => {
 const [universities, setUniversities] = useState("");
@@ -28,8 +29,10 @@ setCountry({ name: e.target.value });
 
 const renderDropdown = () => {
 return (
+
 <div className="select-container">
-<select value={country.name} onChange={handleSelect}>
+<h2 className="heading">Select University From Dropdown</h2>
+<select className="dropdown" value={country.name} onChange={handleSelect}>
 {countries &&
 countries.map((country) => (
 <option value={country.name}>{country.name}</option>
